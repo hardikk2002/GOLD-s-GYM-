@@ -129,7 +129,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 	// putting this html file inner height to local storage(permanent web storage) 
-	localStorage.setItem("packageoneheight", document.body.scrollHeight);
+	localStorage.setItem("packageoneheight", document.documentElement.scrollHeight);
 	$('.subject-selection').change(function(e){
 		let value = $(this).find("option:selected").attr('data-filter');
 		
