@@ -1,0 +1,17 @@
+.banner header{
+	position: relative;
+	height: 40vh;
+	width: 100%;
+	background:linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)),url('https://edge.canon.co.in/EOS6DMarkII/images/posterImg-2.jpg');
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner header h1{
+	position: relative;
+	color: #fff;
+	font-family: 'Poppins',sans-serif;
+	font-size: 6.5rem;
+}
