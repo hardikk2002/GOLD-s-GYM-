@@ -28,4 +28,22 @@ window.onload = function(){
 		} else{
 			topNavbar.style.background = "transparent";
 		}
+
+
+	// contact for validations
+	const contactForm = document.querySelector('.contactForm');
+
+	contactForm.addEventListener("submit",function(e){
+		e.preventDefault();
+		if(e.target.firstName.value == '' || e.target.lastName.value == '' || e.target.email.value == '' || e.target.subject.value == '' || e.target.message.value == ''){
+			alert('please fill all the fields');
+		}else{
+			e.target.firstName.value == '';
+			e.target.lastName.value == '' ;
+			e.target.email.value == '';
+			e.target.subject.value == '';
+			e.target.message.value == '';
+			alert('message sent successfully');
+		}
+	});
 }
