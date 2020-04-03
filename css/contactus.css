@@ -1,6 +1,14 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	height: 30vh;
+}
 .banner header{
 	position: relative;
-	height: 40vh;
+	height: 100%;
 	width: 100%;
 	background:linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)),url('https://edge.canon.co.in/EOS6DMarkII/images/posterImg-2.jpg');
 	background-size: cover;
@@ -8,10 +16,75 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 .banner header h1{
 	position: relative;
 	color: #fff;
 	font-family: 'Poppins',sans-serif;
 	font-size: 6.5rem;
+}
+.bodyContact{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.bodyContact form{
+	position: relative;
+	margin-top: 5%;
+	height: 700px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.bodyContact form .form-group{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	display: flex;
+}
+.bodyContact form .form-group input,
+.bodyContact form .form-group textarea{
+	-webkit-appearance:none !important;
+	appearance:none !important;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding:10px 15px;
+	margin:0 5px;
+	resize: none;
+	outline: none;
+}
+.bodyContact form .form-group:nth-last-child(2){
+	height: 250px;
+}
+.bodyContact form .form-group input:not([type="submit"]),
+.bodyContact form .form-group textarea{
+	border:1px solid #ccc;
+	border-bottom: 5px solid #194056;
+	transition: 0.3s linear;
+}
+.bodyContact form .form-group input:not([type="submit"]):hover,
+.bodyContact form .form-group textarea:hover,
+.bodyContact form .form-group input:not([type="submit"]):focus,
+.bodyContact form .form-group textarea:focus{
+	border-bottom: 5px solid #017bf5;
+}
+.bodyContact form .form-group input[type="submit"]{
+	position: relative;
+	border:1px solid #194056;
+	background-color: #194056;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: 550;
+	letter-spacing: 1px;
+}
+.bodyContact form .form-group input[type="submit"]:hover{
+	background-color: #194056e5;
 }
