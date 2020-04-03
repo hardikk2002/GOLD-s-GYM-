@@ -1,7 +1,9 @@
 
+
 body{
   background-color: black;
   font-family: "Stardos Stencil";
+  padding-bottom: 30px;
 }
 h1{
   font-weight: 700;
@@ -11,6 +13,16 @@ h1{
   font-style: normal;
   text-align: center;
   color: #fff;
+  font-family: "Stardos Stencil";
+}
+p{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #fff;
 }
 .topper{
   text-align: center;
@@ -22,6 +34,7 @@ h1{
   margin-left: 15px;
   margin-right: 15px;
   color: #fff;
+  text-decoration: underline black;
 
 }
 .topper:hover{
@@ -70,8 +83,36 @@ h1{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #4d4d4d;
+  line-height:2rem;
+  height: auto;
 }
+
+.pre-section{
+  font-family: 'Poppins',sans-serif;
+  line-height: 1rem;
+  padding-top: 25px;
+}
+a{
+
+}
+.coll-content{
+  margin: 2% 0;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-color: #fff #FFC312 #fff #FFC312;
+  border-width: 0.5px 5.5px 0.5px 5.5px;
+  border-width: 0.5px 5.5px 0.5px 5.5px;
+  padding: 5px 25px;
+  font-size: 1.2rem;
+  font-family: 'Poppins',sans-serif;
+  top: 5px;
+}
+.coll-content:hover{
+  border-color: #FFC312 #fff #FFC312 #fff;
+}
+
 
 
 /* form */
@@ -79,7 +120,30 @@ h1{
 .form-head{
   color: yellow;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 900;
+}
+/* buttom */
+.button{
+
+    margin: 2% 0;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-color: #fff #FFC312 #fff #FFC312;
+    border-width: 0.5px 5.5px 0.5px 5.5px;
+    padding: 5px 25px;
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 650;
+    margin-left: 550px;
+    top: 20px;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+  border-radius: 45%;
+  border: #fff solid;
+  color: #FFC312;
 }
