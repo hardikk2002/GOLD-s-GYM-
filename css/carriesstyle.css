@@ -1,0 +1,85 @@
+
+body{
+  background-color: black;
+  font-family: "Stardos Stencil";
+}
+h1{
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.0;
+  letter-spacing: 0px;
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+}
+.topper{
+  text-align: center;
+  border: 2px solid yellow;
+  padding: 20px 10px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #fff;
+
+}
+.topper:hover{
+  border: 2.5px solid red;
+  z-index: 1;
+  transform: scale(0.9);
+}
+
+.image{
+  margin-left: 400px;
+}
+
+/* collapsible */
+.collapsible {
+  font-weight: bolder;
+  margin-bottom: 5px;
+  background-color: #4d4d4d;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+
+/* form */
+
+.form-head{
+  color: yellow;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
