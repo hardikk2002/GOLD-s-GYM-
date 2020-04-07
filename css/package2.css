@@ -1,17 +1,28 @@
+body{
+  font-family: poppins;
+  background: darkgrey;
+}
+h1
+{
+  color: black;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+  font-family: "Stardos Stencil";
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
 .wrapper{
-  margin:0;
-  padding:0;
-  height: auto;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 900px;
+  margin: 5% auto;
 }
 .single-price{
   width: 33%;
   background: #262626;
-  margin-top: 5%;
+  float: left;
+  margin-top: 2%;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   transition: 0.9s;
@@ -26,6 +37,7 @@
 }
 .Deals{
   margin-top: 10%;
+  text-align: left;
 }
 .single-price h1{
   font-size: 18px;
@@ -43,6 +55,8 @@
   text-align: center;
   color: #fff;
   line-height: 1;
+  text-align: left;
+  padding-left: 50px;
 }
 .single-price:hover {
   background: #da4357;
