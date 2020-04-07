@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>GOLD GYM GALLARY</title>
+    <link rel="stylesheet" href="gallary.css">
+  </head>
+
+  <body>
+
+    <h1>PHOTO GALLARY</h1>
+
+
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img src="images/gold1.png" onclick="openModal();currentSlide(1)">
+      </div>
+      <div class="column">
+        <img src="images/gold2.png" onclick="openModal();currentSlide(2)">
+      </div>
+      <div class="column">
+        <img src="images/gold3.png" onclick="openModal();currentSlide(3)">
+      </div>
+      <div class="column">
+        <img src="images/gold4.png" onclick="openModal();currentSlide(4)">
+      </div>
+      <div class="column">
+        <img src="images/gold5.png" onclick="openModal();currentSlide(5)">
+      </div>
+
+      <div class="column">
+        <img src="images/gold6.png" onclick="openModal();currentSlide(6)">
+      </div>
+      <div class="column">
+        <img src="images/gold7.png" onclick="openModal();currentSlide(7)">
+      </div>
+      <div class="column">
+        <img src="images/gold8.png" onclick="openModal();currentSlide(8)">
+      </div>
+      <div class="column">
+        <img src="images/gold9.png" onclick="openModal();currentSlide(9)">
+      </div>
+      <div class="column">
+        <img src="images/gold10.png" onclick="openModal();currentSlide(10)">
+      </div>
+      <div class="column">
+        <img src="images/gold11.png" onclick="openModal();currentSlide(11)">
+      </div>
+      <div class="column">
+        <img src="images/gold12.png" onclick="openModal();currentSlide(12)">
+      </div>
+      <div class="column">
+        <img src="images/gold13.png" onclick="openModal();currentSlide(13)">
+      </div>
+      <div class="column">
+        <img src="images/gold14.png" onclick="openModal();currentSlide(14)">
+      </div>
+      <div class="column">
+        <img src="images/gold15.png" onclick="openModal();currentSlide(15)">
+      </div>
+      <div class="column">
+        <img src="images/gold16.png" onclick="openModal();currentSlide(16)">
+      </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 16</div>
+          <img src="images/gold1.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 16</div>
+          <img src="images/gold2.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 16</div>
+          <img src="images/gold3.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 16</div>
+          <img src="images/gold4.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 16</div>
+          <img src="images/gold5.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 16</div>
+          <img src="images/gold6.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 16</div>
+          <img src="images/gold7.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 16</div>
+          <img src="images/gold8.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 16</div>
+          <img src="images/gold9.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 16</div>
+          <img src="images/gold10.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 16</div>
+          <img src="images/gold11.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 16</div>
+          <img src="images/gold12.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">13 / 16</div>
+          <img src="images/gold13.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">14 / 16</div>
+          <img src="images/gold14.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">15 / 16</div>
+          <img src="images/gold15.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">16 / 16</div>
+          <img src="images/gold16.png" style="width:50%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)" style="left: 20px;">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" style="right: 20px;">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="images/gold1.png" onclick="currentSlide(1)" alt="GoldGYM">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold2.png" onclick="currentSlide(2)" alt="Dumble">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold3.png" onclick="currentSlide(3)" alt="Machine">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold4.png" onclick="currentSlide(4)" alt="Equipment">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold5.png" onclick="currentSlide(5)" alt="Machine">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold6.png" onclick="currentSlide(6)" alt="Women">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold7.png" onclick="currentSlide(7)" alt="Man">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold8.png" onclick="currentSlide(8)" alt="MAll">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold9.png" onclick="currentSlide(9)" alt="Visitor">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold10.png" onclick="currentSlide(10)" alt="Inside">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold11.png" onclick="currentSlide(11)" alt="Outside">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold12.png" onclick="currentSlide(12)" alt="GYM">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold13.png" onclick="currentSlide(13)" alt="Trainer">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold14.png" onclick="currentSlide(14)" alt="Photoshoots">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold15.png" onclick="currentSlide(15)" alt="Photoshoots">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/gold16.png" onclick="currentSlide(16)" alt="Photoshoots">
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="gallaery.js" charset="utf-8"></script>
+  </body>
+
+</html>
