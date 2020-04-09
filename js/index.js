@@ -16,23 +16,19 @@ window.onload = function(){
 		});
 	}
 	// connecting html files using object
-	document.querySelector('.package-output').innerHTML='<object class="package-object" type="text/html" data="../../CSE326%20project/11901731/pages/package1.html" ></object>' ;
+	document.querySelector('.package-output').innerHTML='<object class="package-object" type="text/html" data="../GOLD-s-GYM--master/pages/package1.html" ></object>' ;
 		const packages = document.querySelectorAll('.package');
 		for(let i=0; i<packages.length; i++){
 			packages[i].addEventListener("click",function(e){
 				const packageActive = document.querySelector('.packageslinks ul li.active');
 				packageActive.classList.remove('active');
 				e.target.parentElement.classList.add('active');
-				document.querySelector('.package-output').innerHTML='<object class="package-object" type="text/html" data="../../CSE326%20project/11901731/pages/'+e.target.getAttribute('data-redirect')+'" ></object>' ;
+				document.querySelector('.package-output').innerHTML='<object class="package-object" type="text/html" data="../GOLD-s-GYM--master/pages/'+e.target.getAttribute('data-redirect')+'" ></object>' ;
       			let object = document.querySelector('.package-object');
 		      	// console.log(object);
 		      	// getting the inner height of the html file from the local storage for easyness (new concept by using combination of two concepts -- Raman Sharma)
-		      	var x = localStorage.getItem("packageoneheight");
-				if(x != 0){
-					object.height = x ;
-				}else{
-					object.height =0;
-				}
+		      	var x = localStorage.getItem("packageoneheight");					
+		      	object.height = x ;
 			});
 		}
       

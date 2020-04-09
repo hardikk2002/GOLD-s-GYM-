@@ -1,4 +1,5 @@
 
+  localStorage.setItem("packageoneheight", document.body.scrollHeight);
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
